@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "One Stop Brokerage Services",
+    "description": "I'm the leading sporting event photographer in Bangladesh. I offer quality images and products, on-site printing and great pricing!",
+    "img": "https://www.citybrokerageltd.com/images/website_003.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Dual Exchange Trading",
+    "description": "My live match photography is best in the world. The quality of the photos are just amazing and beautiful and ready to use for your next platform.",
+    "img": "https://www.citybrokerageltd.com/images/website_005.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Internamional Standared Research",
+    "description": "I offers top quality posed team & individual photography services for any size team and league. You will get best team photos from me.",
+    "img": "https://www.citybrokerageltd.com/images/value-added-service-img.png"
+  }
+]

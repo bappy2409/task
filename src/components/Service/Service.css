@@ -1,0 +1,13 @@
+.single-service {
+  border: 1px solid #dbdbdb;
+}
+.single-service {
+  padding-top: 1px 0;
+  padding-left: 35px 0;
+  padding-right: 35px 0;
+  padding-bottom: 35px 0;
+}
+.service-image {
+  max-width: 354px;
+  max-height: 236px;
+}

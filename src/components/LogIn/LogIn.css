@@ -1,0 +1,32 @@
+.login-area {
+  text-align: left;
+}
+.nav-link {
+  border-color: #ed1c24 !important;
+}
+
+.login-area .reg-link {
+  /* color: blue; */
+  padding: 10px !important;
+  display: inline-block;
+}
+.login-area .logInButton {
+  background-color: darkslateblue;
+  border-color: darkslateblue;
+}
+
+.header_center {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-column-gap: 1.2rem;
+  align-items: center;
+}
+
+.header_center::before,
+.header_center::after {
+  content: "";
+  display: block;
+  height: 1px;
+  color: #ced4da;
+  background-color: currentColor;
+}

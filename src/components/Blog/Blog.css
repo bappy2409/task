@@ -1,0 +1,9 @@
+.blog-image {
+  max-height: calc(100vh - 72px);
+}
+
+.blog-text {
+  padding-bottom: 90px;
+  color: #ed1c24;
+  font-size: 6vw;
+}
