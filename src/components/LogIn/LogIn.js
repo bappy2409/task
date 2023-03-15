@@ -85,7 +85,7 @@ const LogIn = () => {
               Sign In
             </Button>
             <div id="message-div"></div>
-            <div class="header_center mb-3">Or</div>
+            <div className="header_center mb-3">Or</div>
             <GoogleSignUp />
             <p>
               Don't have an account?
