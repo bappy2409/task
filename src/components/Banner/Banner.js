@@ -16,7 +16,7 @@ const Banner = () => {
   return (
     <Carousel>
       {slider.map((item) => (
-        <Carousel.Item key={item.id} style={{ height: "70%" }}>
+        <Carousel.Item interval={1000} key={item.id} style={{ height: "70%" }}>
           <Carousel.Caption>
             <h1 className="banner-text">{item.subheading}</h1>
           </Carousel.Caption>

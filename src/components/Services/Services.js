@@ -15,7 +15,7 @@ const Services = () => {
   }, []);
 
   return (
-    <section className="services-text mb-5">
+    <section className=" mb-5">
       <SeactionHeading heading="Our Services" />
       <Container>
         <Row>

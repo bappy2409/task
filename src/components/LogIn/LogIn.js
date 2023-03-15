@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { useEffect, useState } from "react";
+import { Container, Row, Col, Carousel } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
@@ -9,6 +9,14 @@ import GoogleSignUp from "../GoogleSignUp/GoogleSignUp";
 import "./LogIn.css";
 
 const LogIn = () => {
+  ///////////////read jason file////////
+  const [slider, setSlider] = useState([]);
+  useEffect(() => {
+    fetch("mobile.json")
+      .then((res) => res.json())
+      .then((data) => setSlider(data));
+  }, []);
+  ///////////////read jason file////////
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -29,7 +37,23 @@ const LogIn = () => {
     <section className="login-area py-5">
       <Container>
         <Row>
-          <Col></Col>
+          <Col>
+            <Carousel>
+              {slider.map((item) => (
+                <Carousel.Item
+                  interval={1000}
+                  key={item.id}
+                  style={{ height: "20%" }}
+                >
+                  <img
+                    className="sign-in-slid d-block w-50 "
+                    src={item.image}
+                    alt="First slide"
+                  />
+                </Carousel.Item>
+              ))}
+            </Carousel>
+          </Col>
           <Col lg={{ span: 6, offcet: 3 }}>
             <h2 className="login-area py-3">Sign In</h2>
             <Form.Group className="mb-4" controlId="formBasicEmail">
