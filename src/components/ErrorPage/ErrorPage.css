@@ -1,3 +1,13 @@
 .error-page {
-  text-align: center;
+  padding: 75px 0;
+  min-height: calc(100vh - 72px - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error-page-text h2 {
+  font-size: 85px;
+}
+.error-page-text h3 {
+  font-size: 45px;
 }
