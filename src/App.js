@@ -10,6 +10,7 @@ import RequireAuth from "./components/RequireAuth/RequireAuth";
 import Footer from "./components/Footer/Footer";
 import Blog from "./components/Blog/Blog";
 import Services from "./components/Services/Services";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="*" element={<ErrorPage />} />
         <Route path="/home" element={<Home />} />
 
         <Route path="/services" element={<Services />} />
